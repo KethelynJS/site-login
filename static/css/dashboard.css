@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #fdfdfd 0%, #216179 100%);
+    font-family: "Zain", sans-serif; /* Altere aqui para a fonte que você deseja usar */
+    font-weight: 100; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Garante que o conteúdo esteja centralizado verticalmente */
+}
+
+.titulo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.logout-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.logout-button:hover {
+    background-color: #0056b3;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 20px;
+    max-width: 1200px; /* Largura máxima para a container */
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+    margin: 0 auto; /* Garante que o container esteja centralizado */
+}
+
+.card {
+    background-color: rgba(29, 58, 75, 0.4); /* Fundo branco com transparência */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Tamanho fixo para os cards */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 300px; /* Permite que os cards se ajustem ao tamanho da tela */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    text-decoration: none; /* Remove sublinhado do texto, se houver */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(250, 250, 250, 0.3);
+}
+
+.card h2 {
+    margin: 0 0 10px 0;
+}
+
+.card a {
+    display: block;
+    padding: 10px 15px;
+    background-color: transparent; /* Fundo transparente */
+    color: #f0f0f0;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.card a:hover {
+    color: #8a939c;
+}
+
+
+
+.logout-button {
+    display: block;
+    width: 70px; /* Ajuste a largura do botão conforme necessário */
+    height: 20px;
+    margin: 20px 20px 20px auto; /* Margem direita automática para alinhamento à direita */
+    padding: 10px;
+    background-color: #9c2b22; /* Cor de fundo para o botão, pode ajustar conforme o seu tema */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 13px; /* Adiciona bordas arredondadas ao botão */
+    position: absolute;
+    bottom: 500px; /* Posiciona o botão no final da página */
+    right: 20px; /* Posiciona o botão no canto direito */
+}
+
+.logout-button:hover {
+    background-color: #d32f2f; /* Cor do botão quando passa o mouse */
+}
+
+.card h2 {
+    margin: 0 0 10px 0;
+    color: rgba(0, 0, 0, 0.6); /* Cor preta com 70% de opacidade */
+    font-size: 24px; /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: bold; /* Torna o texto em negrito */
+}

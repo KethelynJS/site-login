@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>APP BI</title>
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1><img class="left-login-img" src="../static/images/logo.png" alt="imagem" width="50" height="50"></h1>
+            <img class="left-login-img" src="../static/images/business.svg" alt="imagem">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>Login</h1>
+                <!-- Formulário de login adicionado -->
+                <form action="{{ url_for('login') }}" method="post">
+                    <div class="textfield">
+                        <input type="text" id="usuario" name="usuario" placeholder="Usuário" required>
+                    </div>
+                    <div class="textfield">
+                        <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                    </div>
+                    <button class="btn-login" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
